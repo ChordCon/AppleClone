@@ -1,0 +1,24 @@
+.navbar {
+  /* 가운데 정렬 
+  display: grid;
+  place-content: center; */
+  display: grid;
+  place-content: center;
+  background-color: #424245;
+  width: 100%;
+}
+
+.navbarLink {
+  color: rgba(245, 245, 245, 0.726);
+  font-size: 12px;
+  margin: auto 8px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+/* 마우스 오버시 이벤트 
+.navbarLink:hover*/
+
+.navbarLink:hover {
+  color: white;
+}

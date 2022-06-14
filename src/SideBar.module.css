@@ -1,0 +1,19 @@
+.sideBarMenu {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.sidebarUnder {
+  border: none;
+  width: 92%;
+}
+
+.sidebarMenu {
+  color: #3ea4fe;
+  border-top: 1px solid gray;
+  padding: 10px;
+}
+
+.sidebarMenu:hover {
+  background-color: #f0f8ff;
+  color: #3ea4fe;
+}
