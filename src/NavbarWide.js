@@ -1,7 +1,7 @@
 import { Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Navbar.module.css";
-import Example from "./SideBar";
+import SideBar from "./SideBar";
 import TopBar from "./TopBar";
 
 function NavbarWide() {
@@ -65,7 +65,7 @@ function NavbarWide() {
         </Nav.Item>
         <Nav.Item as="li">
           <Nav.Link eventKey="link-11" className={styles.navbarLink}>
-            <Example />
+            <SideBar />
           </Nav.Link>
         </Nav.Item>
       </Nav>

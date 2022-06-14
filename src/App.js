@@ -1,11 +1,16 @@
 import "./App.css";
 import NavbarWide from "./NavbarWide";
+import NavbarN from "./NavbarN";
+import { useState } from "react";
 
 function App() {
+  let [width, setWidth] = useState("");
   return (
     <div className="App">
+      {window.innerWidth <= 835 ? <NavbarN /> : <NavbarWide />}
       <NavbarWide />
-      {/* 창이 줄어들면 네브바네로우로 바뀌게끔 스테이트 써서 밑에저거 콘솔도 써서 만들어야함. */}
+      {/* 스테이트를 사용해서 변경이 가능하게 만들어야함 */}
+      <NavbarN />
 
       {console.log(window.innerWidth)}
     </div>
