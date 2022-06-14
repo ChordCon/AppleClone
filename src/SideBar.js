@@ -9,7 +9,7 @@ function OffCanvasExample({ name, ...props }) {
   const handleShow = () => setShow(true);
 
   return (
-    <div>
+    <>
       <span onClick={handleShow}>🛒</span>
       <Offcanvas show={show} onHide={handleClose} {...props}>
         <Offcanvas.Body>
@@ -33,11 +33,11 @@ function OffCanvasExample({ name, ...props }) {
           </Dropdown.Menu>
         </Offcanvas.Body>
       </Offcanvas>
-    </div>
+    </>
   );
 }
 
-function Example() {
+function SideBar() {
   return (
     <>
       {["end"].map((placement, idx) => (
@@ -47,4 +47,4 @@ function Example() {
   );
 }
 
-export default Example;
+export default SideBar;
