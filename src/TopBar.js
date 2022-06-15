@@ -10,14 +10,18 @@ function OffCanvasExample({ name, ...props }) {
 
   return (
     <div>
-      <span onClick={handleShow}>🔍</span>
+      <span style={{ fontSize: "15px" }} onClick={handleShow}>
+        🔍
+      </span>
       <Offcanvas
         className={styles.topbar}
         show={show}
         onHide={handleClose}
         {...props}
       >
-        <Offcanvas.Header style={{ backgroundColor: "black", height: "46px" }}>
+        <Offcanvas.Header
+          style={{ backgroundColor: "rgb(29, 29, 29)", height: "47px" }}
+        >
           <Offcanvas.Title className={styles.topbarTitle}>
             <input
               className={styles.topbarInput}

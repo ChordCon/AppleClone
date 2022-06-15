@@ -16,7 +16,7 @@
 .topbarInput {
   display: flex;
   margin: auto;
-  background-color: black;
+  background-color: rgb(29, 29, 29);
   border: none;
   font-size: 90%;
   padding: 5px;

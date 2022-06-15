@@ -1,17 +1,18 @@
-import { Accordion, Nav } from "react-bootstrap";
-import { useAccordionButton } from "react-bootstrap/AccordionButton";
-import Card from "react-bootstrap/Card";
+import { Accordion, Nav, Card, useAccordionButton } from "react-bootstrap";
 import styles from "./Navbar.module.css";
 import SideBar from "./SideBar";
 import TopBar from "./TopBar";
-import { Link } from "react-router-dom";
 
 function CustomToggle({ children, eventKey }) {
   const decoratedOnClick = useAccordionButton(eventKey);
 
   return (
     <button
-      style={{ border: "none", color: "white", backgroundColor: "black" }}
+      style={{
+        border: "none",
+        color: "white",
+        backgroundColor: "rgb(29, 29, 29)",
+      }}
       type="button"
       onClick={decoratedOnClick}
     >
@@ -23,13 +24,31 @@ function CustomToggle({ children, eventKey }) {
 function NavbarN() {
   return (
     <Accordion defaultActiveKey="0">
-      <Card>
+      <Card
+        style={{
+          backgroundColor: "rgb(29, 29, 29)",
+          position: "fixed",
+          top: "47px",
+          left: "0px",
+          width: "100%",
+          minWidth: "340px",
+          zIndex: "90",
+        }}
+      >
         <Card.Header
           style={{
-            backgroundColor: "black",
+            backgroundColor: "rgb(29, 29, 29)",
             display: "flex",
             justifyContent: "space-between",
-            alignItems: "baseline",
+            alignItems: "center",
+            height: "47px",
+            width: "100%",
+            minWidth: "340px",
+            opacity: "0.9",
+            position: "fixed",
+            top: "0",
+            left: "0",
+            zIndex: "100",
           }}
         >
           <CustomToggle eventKey="1">=</CustomToggle>
@@ -40,7 +59,9 @@ function NavbarN() {
           <SideBar />
         </Card.Header>
         <Accordion.Collapse eventKey="1">
-          <Card.Body style={{ padding: "0", backgroundColor: "black" }}>
+          <Card.Body
+            style={{ padding: "0", backgroundColor: "rgb(29, 29, 29)" }}
+          >
             <Nav defaultActiveKey="/home" className="flex-column">
               <Nav.Item as="li">
                 <Nav.Link eventKey="link-10" className={styles.navbarLink}>
