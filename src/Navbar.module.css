@@ -4,8 +4,14 @@
   place-content: center; */
   display: grid;
   place-content: center;
-  background-color: #424245;
+  background-color: rgb(29, 29, 29);
   width: 100%;
+  min-width: 340px;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .navbarLink {

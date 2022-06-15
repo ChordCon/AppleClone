@@ -1,0 +1,35 @@
+.container {
+  margin: 20px auto 0 auto;
+  padding: 10px 0 0 0;
+  border-top: 1px solid black;
+  width: 90%;
+  display: grid;
+  grid-template-areas:
+    "gideItem1 gideItem2 gideItem4 gideItem5 gideItem7"
+    "gideItem1 gideItem3 gideItem4 gideItem6 gideItem8";
+}
+
+.gideItem1 {
+  grid-area: gideItem1;
+}
+.gideItem2 {
+  grid-area: gideItem2;
+}
+.gideItem3 {
+  grid-area: gideItem3;
+}
+.gideItem4 {
+  grid-area: gideItem4;
+}
+.gideItem5 {
+  grid-area: gideItem5;
+}
+.gideItem3 {
+  grid-area: gideItem6;
+}
+.gideItem7 {
+  grid-area: gideItem7;
+}
+.gideItem8 {
+  grid-area: gideItem8;
+}

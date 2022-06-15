@@ -10,7 +10,9 @@ function OffCanvasExample({ name, ...props }) {
 
   return (
     <>
-      <span onClick={handleShow}>🛒</span>
+      <span style={{ fontSize: "15px" }} onClick={handleShow}>
+        🛒
+      </span>
       <Offcanvas show={show} onHide={handleClose} {...props}>
         <Offcanvas.Body>
           <Dropdown.Menu

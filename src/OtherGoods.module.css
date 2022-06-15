@@ -1,0 +1,59 @@
+* {
+  font-family: "Varela Round", sans-serif;
+}
+
+.contentInner {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; /*자연스럽게 500이하의 css 값이됨*/
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.goodsName {
+  font-size: 5vw;
+}
+.link {
+  font-size: 2.5vw;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/*675이상일때는 2등분*/
+@media screen and (min-width: 675px) {
+  .contentInner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .goodsName {
+    font-size: 2.3vw;
+  }
+  .link {
+    font-size: 1vw;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+  }
+}
+.textsW {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.textsB {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link:hover {
+  padding: 5px;
+  border: 2px solid #1196ff;
+  border-radius: 10px;
+}
