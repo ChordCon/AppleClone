@@ -60,7 +60,10 @@ function NavbarN() {
         </Card.Header>
         <Accordion.Collapse eventKey="1">
           <Card.Body
-            style={{ padding: "0", backgroundColor: "rgb(29, 29, 29)" }}
+            style={{
+              padding: "0",
+              backgroundColor: "rgb(29, 29, 29)",
+            }}
           >
             <Nav defaultActiveKey="/home" className="flex-column">
               <Nav.Item as="li">

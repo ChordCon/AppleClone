@@ -25,10 +25,11 @@
 /*675이상일때는 2등분*/
 @media screen and (min-width: 675px) {
   .contentInner {
+    width: 100%;
     grid-template-columns: 1fr 1fr;
   }
   .goodsName {
-    font-size: 2.3vw;
+    font-size: 2vw;
   }
   .link {
     font-size: 1vw;
