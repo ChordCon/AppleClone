@@ -4,7 +4,7 @@ import styles from "./Navbar.module.css";
 import SideBar from "./SideBar";
 import TopBar from "./TopBar";
 
-function NavbarWide() {
+function NavbarW() {
   return (
     <div className={styles.navbar}>
       <Nav style={{ alignItems: "center" }} defaultActiveKey="/home" as="ul">
@@ -73,4 +73,4 @@ function NavbarWide() {
   );
 }
 
-export default NavbarWide;
+export default NavbarW;

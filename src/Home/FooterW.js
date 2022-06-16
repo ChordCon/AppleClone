@@ -1,12 +1,12 @@
 import { Dropdown } from "react-bootstrap";
-import styles from "./Footer.module.css";
+import styles from "./FooterW.module.css";
 
 const FooterW = () => {
   return (
     <div className={styles.container}>
       <div className={styles.gideItem1}>
         <Dropdown.Menu show style={{ position: "relative", border: "none" }}>
-          <Dropdown.Header>쇼핑 및 알어보기</Dropdown.Header>
+          <Dropdown.Header>쇼핑 및 알아보기</Dropdown.Header>
           <Dropdown.Item>스토어</Dropdown.Item>
           <Dropdown.Item>Mac</Dropdown.Item>
           <Dropdown.Item>iPad</Dropdown.Item>
@@ -73,7 +73,7 @@ const FooterW = () => {
           <Dropdown.Header>Apple의 가치관</Dropdown.Header>
           <Dropdown.Item>손쉬운 사용</Dropdown.Item>
           <Dropdown.Item>환경</Dropdown.Item>
-          <Dropdown.Item>계인정보 보호</Dropdown.Item>
+          <Dropdown.Item>개인정보 보호</Dropdown.Item>
           <Dropdown.Item>협력업체에 대한 책임</Dropdown.Item>
         </Dropdown.Menu>
       </div>

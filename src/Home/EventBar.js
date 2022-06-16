@@ -3,7 +3,7 @@ import { Nav } from "react-bootstrap";
 const EventBar = () => {
   return (
     <Nav
-      style={{ backgroundColor: "#FFFDEA" }}
+      style={{ backgroundColor: "#FFFDEA", marginTop: "47px" }}
       activeKey="/event"
       onSelect={() => alert(`이벤트 안합니다~`)}
     >
@@ -19,7 +19,7 @@ const EventBar = () => {
         <Nav.Link style={{ padding: "0" }} href="/event">
           온라인으로 쇼핑
         </Nav.Link>
-        하고 무료 배송, 스페셜리스트 지원 등의 혜택을 받으세요.
+        본 웹 사이트는 클론코딩입니다.
       </Nav.Item>
     </Nav>
   );

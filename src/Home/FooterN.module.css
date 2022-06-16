@@ -1,0 +1,22 @@
+.footer {
+  width: 90%;
+  margin: 30px auto 10px auto;
+  padding-top: 30px;
+  border-top: 1px solid rgb(179, 179, 179);
+}
+.nav {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid rgb(179, 179, 179);
+}
+.brand {
+  font-size: medium;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.toggle {
+  border: none;
+}

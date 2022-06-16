@@ -6,3 +6,7 @@
 .App {
   text-align: center;
 }
+.notification {
+  margin: 30px;
+  color: red;
+}
